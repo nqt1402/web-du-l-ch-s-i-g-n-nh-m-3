@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sài Gòn Di Sản &amp; Nhịp Sống – 3 Điểm Đến Biểu Tượng Nhất TP.HCM</title>
+    <meta name="description" content="Hành trình khám phá trọn vẹn 3 biểu tượng du lịch TP.HCM: Bến Bạch Đằng, Phố đi bộ Nguyễn Huệ và Bưu Điện Trung Tâm Sài Gòn với hình ảnh chất lượng cao và cẩm nang chi tiết.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Top Loading Bar -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- Ambient Sound Player Floating Bar -->
+    <div class="ambient-audio-widget" id="audioWidget" title="Bật/tắt thanh âm Sài Gòn">
+        <button id="audioToggleBtn" class="audio-btn" aria-label="Âm thanh Sài Gòn">
+            <i class="fas fa-volume-xmark" id="audioIcon"></i>
+            <span class="audio-text">Sài Gòn Chill Beats</span>
+        </button>
+        <span class="audio-waves">
+            <span></span><span></span><span></span><span></span>
+        </span>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-crest"><i class="fas fa-landmark"></i></span>
+                <div class="brand-text">
+                    <span class="brand-title">SÀI GÒN</span>
+                    <span class="brand-subtitle">HERITAGE &amp; HORIZON</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active"><i class="fas fa-compass"></i> Trang chủ</a>
+                <a href="#overview" class="nav-link"><i class="fas fa-layer-group"></i> Tổng quan</a>
+                <a href="#bach-dang" class="nav-link"><i class="fas fa-water"></i> Bến Bạch Đằng</a>
+                <a href="#nguyen-hue" class="nav-link"><i class="fas fa-shoe-prints"></i> Phố Nguyễn Huệ</a>
+                <a href="#buu-dien" class="nav-link"><i class="fas fa-envelope-open-text"></i> Bưu Điện TP</a>
+                <a href="#itinerary" class="nav-link"><i class="fas fa-route"></i> Lịch trình 1 ngày</a>
+                <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Triển lãm ảnh</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#trip-planner" class="btn btn-gold nav-cta"><i class="fas fa-paper-plane"></i> Lên lịch trình</a>
+                <button class="menu-btn" id="mobileMenuToggle" aria-label="Mở menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <header id="hero" class="hero-section">
+        <div class="hero-bg-carousel" id="heroCarousel">
+            <div class="hero-slide active" style="background-image: url('images/hero-1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero-2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero-3.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content-wrapper">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>TUYỆT TÁC DU LỊCH TRUNG TÂM QUẬN 1 • TP. HỒ CHÍ MINH</span>
+            </div>
+
+            <h1 class="hero-headline">
+                HỒN THỜI GIAN &amp; NHỊP SỐNG HIỆN ĐẠI
+                <span class="gradient-text">TRONG LÒNG SÀI GÒN</span>
+            </h1>
+
+            <p class="hero-lead">
+                Cùng bước vào chuyến du hành tinh hoa kết nối 3 tọa độ văn hóa, kiến trúc và cảnh quan sông nước huyền thoại: từ bờ sóng Bến Bạch Đằng lộng gió, đại lộ Nguyễn Huệ rực rỡ lễ hội, đến tuyệt phẩm kiến trúc Bưu điện Trung tâm hơn 130 năm tuổi.
+            </p>
+
+            <div class="hero-btn-group">
+                <a href="#overview" class="btn btn-primary-glow">
+                    <i class="fas fa-play-circle"></i> Khám phá 3 địa điểm
+                </a>
+                <a href="#itinerary" class="btn btn-glass">
+                    <i class="fas fa-map-location-dot"></i> Lịch trình hoàn hảo
+                </a>
+                <a href="#gallery" class="btn btn-glass">
+                    <i class="fas fa-camera-retro"></i> Xem thư viện ảnh
+                </a>
+            </div>
+
+            <!-- Quick Jump Strip to 3 locations -->
+            <div class="hero-destination-pills">
+                <a href="#bach-dang" class="dest-pill">
+                    <div class="pill-badge">01</div>
+                    <div class="pill-info">
+                        <strong>Bến Bạch Đằng</strong>
+                        <small>Bờ sông, Du thuyền &amp; Waterbus</small>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#nguyen-hue" class="dest-pill">
+                    <div class="pill-badge">02</div>
+                    <div class="pill-info">
+                        <strong>Phố đi bộ Nguyễn Huệ</strong>
+                        <small>Đại lộ hoa &amp; Chung cư Cà phê 42</small>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#buu-dien" class="dest-pill">
+                    <div class="pill-badge">03</div>
+                    <div class="pill-info">
+                        <strong>Bưu Điện Trung Tâm</strong>
+                        <small>Kiệt tác vòm sắt Gustave Eiffel</small>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-stats-row">
+                <div class="stat-box">
+                    <span class="stat-value" data-count="300">0</span><span class="stat-unit">+</span>
+                    <span class="stat-caption">Năm dòng chảy Sài Gòn</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value" data-count="3">0</span>
+                    <span class="stat-caption">Điểm đến di sản tiêu biểu</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value" data-count="15">0</span><span class="stat-unit">phút</span>
+                    <span class="stat-caption">Đi bộ kết nối toàn tuyến</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value" data-count="100">0</span><span class="stat-unit">%</span>
+                    <span class="stat-caption">Trải nghiệm miễn phí &amp; mở cửa</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#overview" class="hero-scroll-cue" aria-label="Cuộn xuống">
+            <span>CUỘN ĐỂ KHÁM PHÁ</span>
+            <div class="scroll-mouse"><div class="mouse-dot"></div></div>
+        </a>
+    </header>
+
+    <!-- ================= TRIANGULAR OVERVIEW ================= -->
+    <section id="overview" class="section section-overview">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-kicker"><i class="fas fa-gem"></i> TAM GIÁC BIỂU TƯỢNG QUẬN 1</span>
+                <h2 class="section-heading">Ba Tọa Độ Tinh Hoa Làm Nên Bản Sắc Sài Gòn</h2>
+                <div class="heading-line"></div>
+                <p class="section-summary">
+                    Nằm trọn vẹn trong bán kính chưa đầy 1,5 km tại trái tim Quận 1, bộ ba địa danh liên hoàn này tái hiện một bức tranh Sài Gòn sống động nhất: vừa lưu giữ trầm tích lịch sử Đông Dương cổ kính, vừa mang nhịp thở quốc tế sôi động từng giây.
+                </p>
+            </div>
+
+            <div class="overview-cards-grid">
+                <!-- Card 1 -->
+                <div class="overview-item-card">
+                    <div class="card-thumb" style="background-image: url('images/bach-dang-bg.jpg');">
+                        <span class="card-tag"><i class="fas fa-water"></i> Cảnh quan sông nước</span>
+                        <span class="card-idx">01</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Bến Bạch Đằng</h3>
+                        <p class="card-sub"><i class="fas fa-map-pin"></i> Đường Tôn Đức Thắng, Phường Bến Nghé, Quận 1</p>
+                        <p class="card-desc">
+                            Không gian công viên ven sông Sài Gòn lộng gió, nơi chiêm ngưỡng trọn vẹn vẻ tráng lệ của các tòa chọc trời Thủ Thiêm, trải nghiệm tuyến tàu buýt sông Waterbus độc đáo và du thuyền dạ tiệc đêm.
+                        </p>
+                        <div class="card-features">
+                            <span><i class="fas fa-ship"></i> Waterbus 15k</span>
+                            <span><i class="fas fa-sun"></i> Hoàng hôn tuyệt mỹ</span>
+                            <span><i class="fas fa-camera"></i> Cột cờ Thủ Ngữ</span>
+                        </div>
+                        <a href="#bach-dang" class="card-link">Khám phá chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="overview-item-card">
+                    <div class="card-thumb" style="background-image: url('images/nguyen-hue-bg.jpg');">
+                        <span class="card-tag"><i class="fas fa-music"></i> Nhịp sống đô thị</span>
+                        <span class="card-idx">02</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Phố Đi Bộ Nguyễn Huệ</h3>
+                        <p class="card-sub"><i class="fas fa-map-pin"></i> Đại lộ Nguyễn Huệ, Phường Bến Nghé, Quận 1</p>
+                        <p class="card-desc">
+                            Trục đại lộ quảng trường dài 670m kết nối trụ sở UBND TP.HCM uy nghiêm tới mé sông. Tâm điểm giải trí, cà phê chung cư 42 cổ điển, nhạc nước, lễ hội và ánh sáng nghệ thuật.
+                        </p>
+                        <div class="card-features">
+                            <span><i class="fas fa-building"></i> Chung cư cà phê 42</span>
+                            <span><i class="fas fa-monument"></i> Tượng đài Bác Hồ</span>
+                            <span><i class="fas fa-sparkles"></i> Nhạc nước &amp; Event</span>
+                        </div>
+                        <a href="#nguyen-hue" class="card-link">Khám phá chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="overview-item-card">
+                    <div class="card-thumb" style="background-image: url('images/buu-dien-bg.jpg');">
+                        <span class="card-tag"><i class="fas fa-archway"></i> Di sản kiến trúc</span>
+                        <span class="card-idx">03</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Bưu Điện Trung Tâm</h3>
+                        <p class="card-sub"><i class="fas fa-map-pin"></i> Số 02 Quảng trường Công Xã Paris, Quận 1</p>
+                        <p class="card-desc">
+                            Tuyệt tác kiến trúc Pháp xây dựng 1886–1891 với vòm thép kiên cố do Gustave Eiffel kiến tạo. Bưu điện lịch sử hoạt động bền bỉ, đối diện Nhà thờ Đức Bà cổ kính.
+                        </p>
+                        <div class="card-features">
+                            <span><i class="fas fa-landmark"></i> Mái vòm Gustave Eiffel</span>
+                            <span><i class="fas fa-map"></i> Bản đồ cổ 1892 &amp; 1936</span>
+                            <span><i class="fas fa-pen-nib"></i> Gửi bưu thiếp tay</span>
+                        </div>
+                        <a href="#buu-dien" class="card-link">Khám phá chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PASSPORT STAMP COLLECTION WIDGET ================= -->
+    <section class="passport-widget-section">
+        <div class="container">
+            <div class="passport-card">
+                <div class="passport-header">
+                    <div class="passport-title-wrap">
+                        <h3><i class="fas fa-passport"></i> SỔ THÔNG HÀNH SÀI GÒN • THU THẬP CON DẤU DU LỊCH</h3>
+                        <p>Nhấp vào từng con dấu bên dưới để "đóng dấu thông hành" kỷ niệm hành trình ghé thăm 3 tọa độ biểu tượng!</p>
+                    </div>
+                    <div class="stamp-counter-badge" id="passportCounter">
+                        ĐÃ THU THẬP: <span id="stampsCollectedCount">0</span>/3 CON DẤU
+                    </div>
+                </div>
+
+                <div class="passport-stamps-grid">
+                    <!-- Stamp 1 -->
+                    <div class="interactive-stamp-box" id="stampBachDang" onclick="collectPassportStamp('stampBachDang')">
+                        <div class="stamp-visual-circle">
+                            <i class="fas fa-ship"></i>
+                            <small>BẠCH ĐẰNG</small>
+                        </div>
+                        <h4>Bến Bạch Đằng</h4>
+                        <p>Đón gió sông &amp; trải nghiệm buýt sông Waterbus</p>
+                        <span class="stamp-btn-trigger"><i class="fas fa-stamp"></i> Đóng dấu ngay</span>
+                    </div>
+
+                    <!-- Stamp 2 -->
+                    <div class="interactive-stamp-box" id="stampNguyenHue" onclick="collectPassportStamp('stampNguyenHue')">
+                        <div class="stamp-visual-circle">
+                            <i class="fas fa-mug-hot"></i>
+                            <small>NGUYỄN HUỆ</small>
+                        </div>
+                        <h4>Phố Đi Bộ Nguyễn Huệ</h4>
+                        <p>Cà phê chung cư 42 &amp; dạo bước đại lộ hoa</p>
+                        <span class="stamp-btn-trigger"><i class="fas fa-stamp"></i> Đóng dấu ngay</span>
+                    </div>
+
+                    <!-- Stamp 3 -->
+                    <div class="interactive-stamp-box" id="stampBuuDien" onclick="collectPassportStamp('stampBuuDien')">
+                        <div class="stamp-visual-circle">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <small>BƯU ĐIỆN 1891</small>
+                        </div>
+                        <h4>Bưu Điện Trung Tâm</h4>
+                        <p>Chiêm ngưỡng vòm sắt Eiffel &amp; gửi bưu thiếp tay</p>
+                        <span class="stamp-btn-trigger"><i class="fas fa-stamp"></i> Đóng dấu ngay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- ĐỊA ĐIỂM 1: BẾN BẠCH ĐẰNG                                        -->
+    <!-- ================================================================= -->
+    <section id="bach-dang" class="destination-detail-block dest-bach-dang">
+        <!-- Parallax Background Banner (Local High-Res Image) -->
+        <div class="dest-backdrop-parallax" style="background-image: url('images/bach-dang-bg.jpg');">
+            <div class="backdrop-gradient-mask"></div>
+        </div>
+
+        <div class="container relative-z">
+            <div class="dest-header-box">
+                <div class="dest-header-flex">
+                    <div class="dest-header-text">
+                        <div class="dest-number-seal">01 / BỜ SÔNG SÀI GÒN</div>
+                        <h2 class="dest-major-title">Bến Bạch Đằng</h2>
+                        <p class="dest-sub-title">Nơi Giao Hòa Giữa Hào Khí Sông Nước &amp; Hiện Đại Hóa Tương Lai</p>
+
+                        <div class="dest-info-chips">
+                            <div class="chip"><i class="fas fa-location-dot"></i> Đường Tôn Đức Thắng, Q.1 (trải dài từ Cầu Ba Son tới Cột Cờ Thủ Ngữ)</div>
+                            <div class="chip"><i class="fas fa-clock"></i> Mở cửa 24/7 (Đẹp nhất: 16:30 – 21:30)</div>
+                            <div class="chip"><i class="fas fa-ticket"></i> Vào cổng hoàn toàn tự do &amp; miễn phí</div>
+                            <div class="chip"><i class="fas fa-bus-simple"></i> Tuyến xe buýt đi qua: 01, 03, 19, 56, 88</div>
+                        </div>
+                    </div>
+
+                    <div class="dest-sticker-badge sticker-river" onclick="collectPassportStamp('stampBachDang')" title="Nhấp để đóng dấu thông hành Bến Bạch Đằng!">
+                        <div class="stamp-serrated">
+                            <i class="fas fa-water"></i>
+                            <span class="stamp-top">SÀI GÒN 1865</span>
+                            <strong class="stamp-center">BẾN BẠCH ĐẰNG</strong>
+                            <span class="stamp-bottom">WATERBUS ★ DI TÍCH</span>
+                        </div>
+                        <span class="sticker-tag">CHECK-IN VIP ⭐</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Split Grid -->
+            <div class="dest-main-grid">
+                <!-- Left Narrative Column -->
+                <div class="dest-narrative-col">
+                    <div class="glass-content-card">
+                        <h3 class="card-title-gold"><i class="fas fa-book-open"></i> Câu Chuyện Bến Nước Lịch Sử</h3>
+                        <p class="lead-text">
+                            Bến Bạch Đằng khởi sinh từ thời nhà Nguyễn với tên gọi Thủy Xưởng bên bờ sông Bến Nghé. Dưới thời Pháp, nơi này trở thành Cảng thương mại Sài Gòn đầu mối buôn bán sầm uất bậc nhất toàn vùng Đông Dương.
+                        </p>
+                        <p>
+                            Năm 2022, Thành phố Hồ Chí Minh hoàn thành đại dự án chỉnh trang toàn diện công viên Bến Bạch Đằng với diện tích hơn 1,6 ha: lát đá hoa cương chống trơn, phủ cỏ nhung xanh ngát hình cánh sen uốn lượn, bố trí đài phun nước nghệ thuật và hệ thống chiếu sáng âm đất đạt tiêu chuẩn quốc tế. Từ đây, du khách có thể phóng tầm mắt ôm trọn cầu Ba Son biểu tượng dây văng và những tòa cao ốc tài chính tráng lệ phản chiếu xuống dòng nước êm đềm.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="feature-pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-ship"></i></div>
+                                <h4>Ga Saigon Waterbus</h4>
+                                <p>Tuyến buýt sông số 1 (Bạch Đằng - Linh Đông) chỉ 15.000 VNĐ/vé. Trải nghiệm lướt sóng ngắm nhìn toàn cảnh trung tâm từ góc nhìn dưới mặt nước vô cùng thú vị.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-monument"></i></div>
+                                <h4>Cột Cờ Thủ Ngữ</h4>
+                                <p>Xây dựng từ năm 1865, từng là trạm hoa tiêu và cột phát tín hiệu tàu bè ra vào ngã ba rạch Bến Nghé. Di tích lịch sử cấp thành phố hơn 150 năm tuổi trang nghiêm.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-champagne-glasses"></i></div>
+                                <h4>Du Thuyền Ẩm Thực Đêm</h4>
+                                <p>Hàng loạt tàu nhà hàng nổi tiếng như Saigon Princess, Tàu Bến Nghé, Indochina Queen khởi hành mỗi tối đưa thực khách thưởng thức bữa tiệc cùng âm nhạc trữ tình.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-camera"></i></div>
+                                <h4>Tọa Độ Hoàng Hôn</h4>
+                                <p>Góc chụp ảnh hoàng hôn rực rỡ nhất Sài Gòn khi mặt trời dần lặn sau các tòa tháp cao vút, nhuộm ánh vàng cam ấm áp lên mặt sóng lăn tăn.</p>
+                            </div>
+                        </div>
+
+                        <!-- Check-in Tips Box -->
+                        <div class="pro-tips-banner">
+                            <div class="tips-badge"><i class="fas fa-lightbulb"></i> BỎ TÚI KINH NGHIỆM ĐẮC GIÁ</div>
+                            <ul class="tips-list">
+                                <li><strong>Thời khắc đẹp nhất:</strong> Hãy có mặt vào lúc 17:15 để đón hoàng hôn chuyển màu từ cam rực sang tím thẫm (Magic Hour).</li>
+                                <li><strong>Vé Waterbus:</strong> Nên đặt vé online trước trên app/web Saigon Waterbus vào dịp cuối tuần để tránh hết vé chỗ ngồi view cửa sổ.</li>
+                                <li><strong>Chỗ gửi xe tiện nhất:</strong> Bãi giữ xe Ga tàu thủy Bạch Đằng hoặc Bãi xe Cột cờ Thủ Ngữ (giá 10.000 VNĐ/xe).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Dedicated Photo Showcase Column -->
+                <div class="dest-gallery-col">
+                    <div class="gallery-stack-card">
+                        <div class="stack-header">
+                            <h4><i class="fas fa-camera-retro"></i> GÓC ẢNH ĐẶC SẮC TẠI BẾN BẠCH ĐẰNG</h4>
+                            <span class="photo-counter">4 Góc máy chuẩn xác</span>
+                        </div>
+
+                        <div class="curated-photo-grid">
+                            <div class="curated-photo-item" onclick="openLightbox('images/bach-dang-bg.jpg', 'Toàn cảnh Bến Bạch Đằng & Dòng sông Sài Gòn')">
+                                <span class="photo-corner-badge"><i class="fas fa-eye"></i> TOÀN CẢNH</span>
+                                <img src="images/bach-dang-bg.jpg" alt="Toàn cảnh Bến Bạch Đằng và sông Sài Gòn" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Toàn cảnh Bến Bạch Đằng</span>
+                                    <span class="spot-desc">Thảm cỏ hoa &amp; Sông nước mênh mông</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/bach-dang-1.jpg', 'Ga tàu thủy Saigon Waterbus - Bến Bạch Đằng')">
+                                <span class="photo-corner-badge"><i class="fas fa-ship"></i> WATERBUS 15K</span>
+                                <img src="images/bach-dang-1.jpg" alt="Ga tàu buýt sông Saigon Waterbus tại Bến Bạch Đằng" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Ga Buýt Sông Saigon Waterbus</span>
+                                    <span class="spot-desc">Điểm check-in cà phê và du ngoạn</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/bach-dang-2.jpg', 'Cột Cờ Thủ Ngữ - Di tích lịch sử bên Bến Bạch Đằng')">
+                                <span class="photo-corner-badge"><i class="fas fa-landmark"></i> DI TÍCH 1865</span>
+                                <img src="images/bach-dang-2.jpg" alt="Cột cờ Thủ Ngữ Bến Bạch Đằng" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Cột Cờ Thủ Ngữ Cổ Kính</span>
+                                    <span class="spot-desc">Di tích xây dựng từ 1865</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/bach-dang-4.jpg', 'Hoàng hôn rực rỡ trên sông Sài Gòn nhìn từ Bến Bạch Đằng')">
+                                <span class="photo-corner-badge"><i class="fas fa-sun"></i> HOÀNG HÔN VÀNG</span>
+                                <img src="images/bach-dang-4.jpg" alt="Hoàng hôn trên sông Sài Gòn nhìn từ Bến Bạch Đằng" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Hoàng Hôn Sông Sài Gòn</span>
+                                    <span class="spot-desc">Khoảnh khắc rực rỡ buông xuống bến tàu</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map connector -->
+                        <div class="transit-connector-card">
+                            <div class="transit-icon"><i class="fas fa-person-walking"></i></div>
+                            <div class="transit-text">
+                                <strong>Di chuyển tiếp theo:</strong>
+                                <span>Đi bộ băng qua đường Tôn Đức Thắng vào ngay đầu <strong>Phố đi bộ Nguyễn Huệ</strong> chỉ mất đúng <strong>3 - 5 phút (350 mét)</strong>.</span>
+                            </div>
+                            <a href="#nguyen-hue" class="transit-btn">Đến Nguyễn Huệ <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- ĐỊA ĐIỂM 2: PHỐ ĐI BỘ NGUYỄN HUỆ                                  -->
+    <!-- ================================================================= -->
+    <section id="nguyen-hue" class="destination-detail-block dest-nguyen-hue">
+        <!-- Parallax Background Banner (Local High-Res Image) -->
+        <div class="dest-backdrop-parallax" style="background-image: url('images/nguyen-hue-bg.jpg');">
+            <div class="backdrop-gradient-mask"></div>
+        </div>
+
+        <div class="container relative-z">
+            <div class="dest-header-box">
+                <div class="dest-header-flex">
+                    <div class="dest-header-text">
+                        <div class="dest-number-seal">02 / TRÁI TIM ĐÔ THỊ</div>
+                        <h2 class="dest-major-title">Phố Đi Bộ Nguyễn Huệ</h2>
+                        <p class="dest-sub-title">Đại Lộ Hoa Rực Rỡ, Quảng Trường Văn Hóa &amp; Thanh Âm Tuổi Trẻ Sài Gòn</p>
+
+                        <div class="dest-info-chips">
+                            <div class="chip"><i class="fas fa-location-dot"></i> Đại lộ Nguyễn Huệ, P. Bến Nghé, Q.1 (nối UBND TP đến Công viên Bạch Đằng)</div>
+                            <div class="chip"><i class="fas fa-clock"></i> Đi bộ tự do 24/7 (Cấm xe: 18:00 – 22:00 thứ Bảy &amp; Chủ Nhật)</div>
+                            <div class="chip"><i class="fas fa-ruler-horizontal"></i> Chiều dài: 670m • Chiều rộng: 64m • Lát đá Granite cao cấp</div>
+                            <div class="chip"><i class="fas fa-wifi"></i> Wifi công cộng miễn phí toàn tuyến</div>
+                        </div>
+                    </div>
+
+                    <div class="dest-sticker-badge sticker-boulevard" onclick="collectPassportStamp('stampNguyenHue')" title="Nhấp để đóng dấu thông hành Phố Nguyễn Huệ!">
+                        <div class="stamp-serrated">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span class="stamp-top">QUẢNG TRƯỜNG HOA</span>
+                            <strong class="stamp-center">NGUYỄN HUỆ</strong>
+                            <span class="stamp-bottom">CHUNG CƯ 42 • SỐNG ẢO</span>
+                        </div>
+                        <span class="sticker-tag pulse">HOT TREND 🔥</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Split Grid -->
+            <div class="dest-main-grid">
+                <!-- Left Narrative Column -->
+                <div class="dest-narrative-col">
+                    <div class="glass-content-card">
+                        <h3 class="card-title-gold"><i class="fas fa-monument"></i> Dấu Ấn Đại Lộ Charner Lừng Lẫy</h3>
+                        <p class="lead-text">
+                            Ít ai ngờ rằng, con đường rực rỡ này vào thế kỷ 19 từng là kênh đào Grand Canal (Kênh Lớn, hay kênh Charner) dẫn nước trực tiếp từ sông Sài Gòn vào thành Gia Định. Năm 1887, người Pháp tiến hành lấp kênh và quy hoạch thành Đại lộ Charner sang trọng bậc nhất Sài Thành.
+                        </p>
+                        <p>
+                            Năm 2015, phố chính thức được nâng cấp thành quảng trường đi bộ hiện đại nhất Việt Nam. Toàn bộ mặt đường lát đá granite tự nhiên dày dặn, bên dưới lòng đất là trung tâm điều hành ánh sáng, nhạc nước nghệ thuật ngầm và hệ thống cây xanh cổ thụ kết hợp giàn hoa giấy râm mát. Nơi đây là sân khấu mở của mọi sự kiện thể thao quốc gia (truyền hình trực tiếp bóng đá màn hình LED khổng lồ), biểu diễn ca nhạc đường phố và đặc biệt là sự kiện <em>Đường hoa Tết Nguyễn Huệ</em> thu hút hàng triệu du khách mỗi mùa xuân về.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="feature-pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-landmark"></i></div>
+                                <h4>Trụ Sở HĐND - UBND TP</h4>
+                                <p>Tòa nhà mang kiến trúc Phục Hưng Pháp tuyệt mỹ xây dựng 1898–1909 với tháp chuông đỉnh cao và những bức phù điêu tinh xảo. Phía trước là Tượng đài Chủ tịch Hồ Chí Minh trang nghiêm.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-mug-hot"></i></div>
+                                <h4>Chung Cư Cà Phê 42</h4>
+                                <p>Khối chung cư 9 tầng xây từ thập niên 1960 trở thành "hộp quà thị giác" kỳ diệu với hàng chục quán cà phê phong cách vintage, indie, bohemian và ban công nhìn thẳng ra đại lộ.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                                <h4>Đài Phun Nước Nghệ Thuật</h4>
+                                <p>Hệ thống phun nước âm sàn kết hợp dàn đèn laser màu đổi sắc theo từng giai điệu nhạc sống động, tạo nên điểm giải nhiệt và vui chơi náo nhiệt vào mỗi tối mát mẻ.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-guitar"></i></div>
+                                <h4>Nhạc Sống &amp; Nghệ Thuật</h4>
+                                <p>Mỗi buổi tối, đặc biệt cuối tuần, bạn sẽ bắt gặp các nhóm biểu diễn acoustic, saxophone, ảo thuật, trượt ván và nhảy hip-hop tự do mang đậm năng lượng tuổi trẻ phóng khoáng.</p>
+                            </div>
+                        </div>
+
+                        <!-- Check-in Tips Box -->
+                        <div class="pro-tips-banner">
+                            <div class="tips-badge"><i class="fas fa-lightbulb"></i> MẸO THƯỞNG THỨC NGUYỄN HUỆ CHUẨN SÀI GÒN</div>
+                            <ul class="tips-list">
+                                <li><strong>Check-in chung cư 42:</strong> Đi thang máy lên tầng 8-9 (phí 3.000 VNĐ/lượt, sẽ được quán cà phê hoàn lại khi gọi đồ) để có tầm nhìn bao quát toàn bộ phố đi bộ từ trên cao.</li>
+                                <li><strong>Ẩm thực vỉa hè:</strong> Đừng bỏ qua trà đào dầm, kem dừa Malaysia, trà sữa phô mai tươi và bánh tráng trộn nướng thơm lừng tại các con hẻm kề bên phố.</li>
+                                <li><strong>Gửi xe an toàn:</strong> Gửi xe tại hầm Trung tâm thương mại Vincom Đồng Khởi hoặc khách sạn Rex kề bên phố đi bộ.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Dedicated Photo Showcase Column -->
+                <div class="dest-gallery-col">
+                    <div class="gallery-stack-card">
+                        <div class="stack-header">
+                            <h4><i class="fas fa-camera-retro"></i> GÓC ẢNH ĐẶC SẮC TẠI PHỐ ĐI BỘ NGUYỄN HUỆ</h4>
+                            <span class="photo-counter">4 Góc máy chuẩn xác</span>
+                        </div>
+
+                        <div class="curated-photo-grid">
+                            <div class="curated-photo-item" onclick="openLightbox('images/nguyen-hue-1.jpg', 'Góc nhìn toàn cảnh đại lộ Phố đi bộ Nguyễn Huệ')">
+                                <span class="photo-corner-badge"><i class="fas fa-shoe-prints"></i> QUẢNG TRƯỜNG</span>
+                                <img src="images/nguyen-hue-1.jpg" alt="Toàn cảnh phố đi bộ Nguyễn Huệ ban ngày" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Đại Lộ Nguyễn Huệ</span>
+                                    <span class="spot-desc">Không gian quảng trường thênh thang</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/nguyen-hue-2.jpg', 'Tòa nhà Trụ sở UBND TP.HCM & Tượng đài Bác Hồ kính yêu')">
+                                <span class="photo-corner-badge"><i class="fas fa-landmark"></i> UBND TP 1898</span>
+                                <img src="images/nguyen-hue-2.jpg" alt="Trụ sở UBND Thành phố Hồ Chí Minh" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Trụ Sở UBND TP &amp; Tượng Bác</span>
+                                    <span class="spot-desc">Di sản kiến trúc Phục Hưng kinh điển</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/nguyen-hue-3.jpg', 'Chung cư Cà phê 42 Nguyễn Huệ - Biểu tượng phong cách giới trẻ Sài Gòn')">
+                                <span class="photo-corner-badge"><i class="fas fa-mug-hot"></i> CHECK-IN 42</span>
+                                <img src="images/nguyen-hue-3.jpg" alt="Chung cư cà phê số 42 Nguyễn Huệ" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Chung Cư Cà Phê 42</span>
+                                    <span class="spot-desc">Tọa độ sống ảo lừng danh thế giới</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/nguyen-hue-4.jpg', 'Phố đi bộ Nguyễn Huệ rực sáng lung linh khi màn đêm buông xuống')">
+                                <span class="photo-corner-badge"><i class="fas fa-moon"></i> ÁNH SÁNG ĐÊM</span>
+                                <img src="images/nguyen-hue-4.jpg" alt="Nguyễn Huệ về đêm rực rỡ ánh đèn cao ốc" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Đại Lộ Ánh Sáng Về Đêm</span>
+                                    <span class="spot-desc">Sôi động bất tận giữa muôn ánh đèn</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map connector -->
+                        <div class="transit-connector-card">
+                            <div class="transit-icon"><i class="fas fa-person-walking"></i></div>
+                            <div class="transit-text">
+                                <strong>Di chuyển tiếp theo:</strong>
+                                <span>Từ đầu tượng đài Bác Hồ rẽ sang đường Lê Lợi hoặc Đồng Khởi tiến vào <strong>Công xã Paris</strong> để ghé thăm <strong>Bưu Điện Trung Tâm</strong> chỉ khoảng <strong>7 - 10 phút đi bộ (650 mét)</strong>.</span>
+                            </div>
+                            <a href="#buu-dien" class="transit-btn">Đến Bưu Điện <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- ĐỊA ĐIỂM 3: BƯU ĐIỆN TRUNG TÂM SÀI GÒN                           -->
+    <!-- ================================================================= -->
+    <section id="buu-dien" class="destination-detail-block dest-buu-dien">
+        <!-- Parallax Background Banner (Local High-Res Image) -->
+        <div class="dest-backdrop-parallax" style="background-image: url('images/buu-dien-bg.jpg');">
+            <div class="backdrop-gradient-mask"></div>
+        </div>
+
+        <div class="container relative-z">
+            <div class="dest-header-box">
+                <div class="dest-header-flex">
+                    <div class="dest-header-text">
+                        <div class="dest-number-seal">03 / DI SẢN KIẾN TRÚC</div>
+                        <h2 class="dest-major-title">Bưu Điện Trung Tâm Sài Gòn</h2>
+                        <p class="dest-sub-title">Kiệt Tác Vòm Sắt Gustave Eiffel – Nơi Hơn Một Thế Kỷ Gửi Gắm Tình Người</p>
+
+                        <div class="dest-info-chips">
+                            <div class="chip"><i class="fas fa-location-dot"></i> Số 02 Công xã Paris, Phường Bến Nghé, Quận 1 (đối diện Nhà thờ Đức Bà)</div>
+                            <div class="chip"><i class="fas fa-clock"></i> Mở cửa: Thứ 2 – Thứ 7 (07:30 – 18:00) • Chủ Nhật (08:00 – 17:00)</div>
+                            <div class="chip"><i class="fas fa-ticket"></i> Vào cổng tham quan &amp; chụp ảnh miễn phí 100%</div>
+                            <div class="chip"><i class="fas fa-envelope"></i> Vẫn duy trì đầy đủ dịch vụ bưu chính, điện tín quốc tế</div>
+                        </div>
+                    </div>
+
+                    <div class="dest-sticker-badge sticker-heritage" onclick="collectPassportStamp('stampBuuDien')" title="Nhấp để đóng dấu thông hành Bưu Điện!">
+                        <div class="stamp-serrated">
+                            <i class="fas fa-stamp"></i>
+                            <span class="stamp-top">POSTE DE SAIGON</span>
+                            <strong class="stamp-center">1891</strong>
+                            <span class="stamp-bottom">GUSTAVE EIFFEL</span>
+                        </div>
+                        <span class="sticker-tag">DI SẢN TRĂM NĂM 📜</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Split Grid -->
+            <div class="dest-main-grid">
+                <!-- Left Narrative Column -->
+                <div class="dest-narrative-col">
+                    <div class="glass-content-card">
+                        <h3 class="card-title-gold"><i class="fas fa-landmark-dome"></i> Viên Ngọc Kiến Trúc Pháp Giữa Lòng Thành Phố</h3>
+                        <p class="lead-text">
+                            Được khởi công xây dựng từ năm 1886 và khánh thành vào năm 1891 theo đồ án của kiến trúc sư người Pháp Marie-Alfred Foulhoux (cùng sự tham gia thiết kế kết cấu kim loại của kỹ sư huyền thoại Gustave Eiffel – cha đẻ tháp Eiffel Paris), Bưu điện Trung tâm Sài Gòn là một trong những công trình bưu cục cổ kính và tráng lệ nhất châu Á.
+                        </p>
+                        <p>
+                            Mặt tiền công trình gây ấn tượng mạnh mẽ với gam màu vàng đất ấm áp, các vòm cửa uốn lượn chạm khắc hoa văn tinh xảo cùng chiếc đồng hồ cơ lớn ngự trị trên lối vào chính. Bên dưới các ô cửa sổ tầng trệt là những phiến bảng hình chữ nhật đắp nổi tên tuổi của các nhà phát minh vĩ đại đã đặt nền móng cho ngành điện tín, vật lý và viễn thông nhân loại như Volta, Ampère, Morse, Ohm, Faraday,...
+                        </p>
+                        <p>
+                            Bước qua cánh cổng gỗ lớn, du khách sẽ ngay lập tức choáng ngợp trước hệ thống vòm mái thép uốn cong hình vòm thùng rượu cao vút, được nâng đỡ bởi các hàng cột sắt sơn xanh ngọc thanh thoát. Sàn nhà lát gạch hoa cổ nhập khẩu nguyên khối từ Pháp đến nay vẫn giữ nguyên hoa văn đối xứng sắc nét.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="feature-pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-map-location"></i></div>
+                                <h4>2 Bản Đồ Cổ Lịch Sử</h4>
+                                <p>Hai bức tranh tường khổng lồ vẽ tay treo hai bên sảnh: Bản đồ viễn thông Nam Kỳ &amp; Campuchia năm 1936 cùng bản đồ quy hoạch Sài Gòn và vùng phụ cận năm 1892.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-phone-volume"></i></div>
+                                <h4>Bốt Điện Thoại Bằng Gỗ Cổ</h4>
+                                <p>14 buồng điện thoại công cộng bằng gỗ mun cổ kính nằm dọc hai cánh tiền sảnh, đưa du khách ngược dòng thời gian về thời kỳ viễn thông sơ khai.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-pen-fancy"></i></div>
+                                <h4>Truyền Thống Gửi Bưu Thiếp</h4>
+                                <p>Mua những tấm bưu thiếp in hình phong cảnh Sài Gòn, tự tay dán tem bưu chính Việt Nam và thả vào thùng thư gửi đi khắp 5 châu cho người thân, bạn bè.</p>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fas fa-user-pen"></i></div>
+                                <h4>Cụ Dương Văn Ngộ</h4>
+                                <p>Ký ức đẹp đẽ về người viết thư thuê xuyên thế kỷ nói trôi chảy cả tiếng Anh và tiếng Pháp – biểu tượng sống của lòng nhân ái và văn hóa Sài Gòn mộc mạc.</p>
+                            </div>
+                        </div>
+
+                        <!-- Check-in Tips Box -->
+                        <div class="pro-tips-banner">
+                            <div class="tips-badge"><i class="fas fa-lightbulb"></i> MẸO THAM QUAN &amp; CHỤP ẢNH TẠI BƯU ĐIỆN</div>
+                            <ul class="tips-list">
+                                <li><strong>Góc máy triệu like:</strong> Đứng ở chính giữa sảnh lớn dưới tượng Bác Hồ, dùng chế độ góc rộng 0.5x để bắt trọn chiều sâu và độ cong tuyệt mỹ của vòm mái thép Eiffel.</li>
+                                <li><strong>Quà lưu niệm:</strong> Bên trong có các quầy tem thư cổ, tranh sơn mài, mô hình xích lô bằng đồng rất thích hợp làm quà tặng kỷ niệm đậm chất Việt Nam.</li>
+                                <li><strong>Cụm di tích liền kề:</strong> Ngay phía trước là Nhà thờ Đức Bà, bên phải là Đường Sách Nguyễn Văn Bình và Công viên 30/4 rợp bóng cổ thụ.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Dedicated Photo Showcase Column -->
+                <div class="dest-gallery-col">
+                    <div class="gallery-stack-card">
+                        <div class="stack-header">
+                            <h4><i class="fas fa-camera-retro"></i> GÓC ẢNH ĐẶC SẮC TẠI BƯU ĐIỆN TP</h4>
+                            <span class="photo-counter">4 Góc máy chuẩn xác</span>
+                        </div>
+
+                        <div class="curated-photo-grid">
+                            <div class="curated-photo-item" onclick="openLightbox('images/buu-dien-1.jpg', 'Mặt tiền Bưu Điện Trung Tâm Sài Gòn phong cách Phục Hưng Pháp')">
+                                <span class="photo-corner-badge"><i class="fas fa-clock"></i> ĐỒNG HỒ CỔ</span>
+                                <img src="images/buu-dien-1.jpg" alt="Mặt ngoài Bưu điện Trung tâm Sài Gòn" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Mặt Tiền Bưu Điện Vàng Óng</span>
+                                    <span class="spot-desc">Đồng hồ cổ và vòm cửa đắp nổi tinh mỹ</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/buu-dien-2.jpg', 'Vòm mái thép uốn cong huyền thoại do Gustave Eiffel thiết kế')">
+                                <span class="photo-corner-badge"><i class="fas fa-archway"></i> VÒM THÉP EIFFEL</span>
+                                <img src="images/buu-dien-2.jpg" alt="Nội thất vòm thép Bưu điện Sài Gòn" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Vòm Sắt Gustave Eiffel</span>
+                                    <span class="spot-desc">Không gian vòm thùng rượu ngập tràn ánh sáng</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/buu-dien-3.jpg', 'Bản đồ cổ vẽ tay lịch sử và bốt điện thoại gỗ cổ kính')">
+                                <span class="photo-corner-badge"><i class="fas fa-map"></i> BẢN ĐỒ 1936</span>
+                                <img src="images/buu-dien-3.jpg" alt="Bản đồ cổ bên trong Bưu điện Trung tâm" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Bản Đồ Cổ Lịch Sử &amp; Bốt Điện Thoại</span>
+                                    <span class="spot-desc">Dấu tích viễn thông thế kỷ 19</span>
+                                </div>
+                            </div>
+
+                            <div class="curated-photo-item" onclick="openLightbox('images/buu-dien-4.jpg', 'Nhà thờ Đức Bà Sài Gòn sừng sững ngay đối diện Bưu Điện')">
+                                <span class="photo-corner-badge"><i class="fas fa-church"></i> ĐỨC BÀ KỀ BÊN</span>
+                                <img src="images/buu-dien-4.jpg" alt="Nhà thờ Đức Bà đối diện Bưu điện Sài Gòn" loading="lazy">
+                                <div class="photo-overlay-tag">
+                                    <span class="spot-name">Quần Thể Công Xã Paris</span>
+                                    <span class="spot-desc">Nhà thờ Đức Bà &amp; Bưu điện song hành</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map connector -->
+                        <div class="transit-connector-card">
+                            <div class="transit-icon"><i class="fas fa-coffee"></i></div>
+                            <div class="transit-text">
+                                <strong>Trải nghiệm tiếp nối:</strong>
+                                <span>Thư giãn tại <strong>Đường Sách Nguyễn Văn Bình</strong> kề nách bưu điện, thưởng thức một ly cà phê sữa đá bệt truyền thống dưới bóng cây me mát rượi.</span>
+                            </div>
+                            <a href="#itinerary" class="transit-btn">Xem lịch trình <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 1-DAY TRAVEL ITINERARY ================= -->
+    <section id="itinerary" class="section section-itinerary">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-kicker"><i class="fas fa-calendar-check"></i> CẨM NANG THỰC TẾ</span>
+                <h2 class="section-heading">Gợi Ý Lịch Trình Hoàn Hảo: "Một Ngày Chạm Vào Sài Gòn"</h2>
+                <div class="heading-line"></div>
+                <p class="section-summary">
+                    Lịch trình tối ưu thời gian, ánh sáng chụp ảnh đẹp nhất và tránh nóng hiệu quả, kết nối trọn vẹn cả 3 địa điểm chỉ trong một ngày đáng nhớ.
+                </p>
+            </div>
+
+            <div class="timeline-itinerary-wrap">
+                <!-- Morning -->
+                <div class="itinerary-node">
+                    <div class="node-time">
+                        <span class="time-hour">07:30 – 10:00</span>
+                        <span class="time-period"><i class="fas fa-sun"></i> SÁNG SỚM</span>
+                    </div>
+                    <div class="node-card">
+                        <div class="node-badge">Chặng 1: Hoài Niệm &amp; Cà Phê Bệt</div>
+                        <h4>Bưu Điện Trung Tâm &amp; Đường Sách Nguyễn Văn Bình</h4>
+                        <p>
+                            Bắt đầu ngày mới khi ánh nắng ban mai rọi qua vòm kính Bưu Điện Trung Tâm – lúc này lượng khách chưa đông, không gian thanh bình và ánh sáng chụp chân dung kiến trúc đẹp nhất. Mua và gửi bưu thiếp cho người thân, sau đó tản bộ qua Đường Sách chọn một cuốn sách hay và nhâm nhi cà phê bệt Công viên 30/4.
+                        </p>
+                        <div class="node-tags">
+                            <span><i class="fas fa-utensils"></i> Bánh mì chảo Huỳnh Hoa / Phở Hòa</span>
+                            <span><i class="fas fa-camera"></i> Chụp vòm mái Eiffel sáng sớm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-day -->
+                <div class="itinerary-node">
+                    <div class="node-time">
+                        <span class="time-hour">14:30 – 17:00</span>
+                        <span class="time-period"><i class="fas fa-cloud-sun"></i> BUỔI CHIỀU</span>
+                    </div>
+                    <div class="node-card">
+                        <div class="node-badge">Chặng 2: Năng Động &amp; Chill Tầng Cao</div>
+                        <h4>Phố Đi Bộ Nguyễn Huệ &amp; Khám Phá Chung Cư 42</h4>
+                        <p>
+                            Di chuyển dọc theo con đường Đồng Khởi lịch thiệp xuống phố đi bộ Nguyễn Huệ. Thăm và chụp ảnh trước Tượng đài Bác Hồ cùng Trụ sở UBND TP. Sau đó ghé thăm Chung cư 42 Nguyễn Huệ, chọn một quán cà phê ban công ngắm nhìn trục đại lộ rộn ràng từ trên cao và thưởng thức món kem bơ béo ngậy.
+                        </p>
+                        <div class="node-tags">
+                            <span><i class="fas fa-mug-saucer"></i> % Arabica / Partea / Dosh Cafe</span>
+                            <span><i class="fas fa-bag-shopping"></i> Mua sắm lưu niệm Takashimaya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunset & Night -->
+                <div class="itinerary-node">
+                    <div class="node-time">
+                        <span class="time-hour">17:15 – 21:30</span>
+                        <span class="time-period"><i class="fas fa-moon"></i> HOÀNG HÔN &amp; TỐI</span>
+                    </div>
+                    <div class="node-card">
+                        <div class="node-badge">Chặng 3: Gió Sông, Hoàng Hôn &amp; Nhạc Sống</div>
+                        <h4>Bến Bạch Đằng – Saigon Waterbus &amp; Dạ Tiệc Sông Nước</h4>
+                        <p>
+                            Băng qua đường đến Bến Bạch Đằng lúc 17:15 để chiêm ngưỡng hoàng hôn nhuộm đỏ sông Sài Gòn. Bạn có thể đón chuyến buýt sông ngắm các cây cầu hoặc thưởng thức bữa tối lãng mạn trên du thuyền. Khi đêm xuống, trở lại phố Nguyễn Huệ hòa mình vào các ban nhạc acoustic và xem biểu diễn nhạc nước lung linh sắc màu.
+                        </p>
+                        <div class="node-tags">
+                            <span><i class="fas fa-ship"></i> Vé Waterbus hoặc Dinner Cruise</span>
+                            <span><i class="fas fa-burger"></i> Bánh tráng nướng &amp; Chè bưởi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PHOTO GALLERY (FILTERABLE + LIGHTBOX) ================= -->
+    <section id="gallery" class="section section-gallery">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-kicker"><i class="fas fa-images"></i> BỘ SƯU TẬP HÌNH ẢNH THỰC TẾ</span>
+                <h2 class="section-heading">Sài Gòn Qua Lăng Kính Nhiếp Ảnh</h2>
+                <div class="heading-line"></div>
+                <p class="section-summary">
+                    Tuyển tập những khung hình chân thực, độ phân giải cao ghi lại từng ngóc ngách đắt giá của 3 địa danh biểu tượng.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters-bar">
+                <button class="filter-tab-btn active" data-filter="all"><i class="fas fa-border-all"></i> Tất cả (12)</button>
+                <button class="filter-tab-btn" data-filter="bach-dang"><i class="fas fa-water"></i> Bến Bạch Đằng</button>
+                <button class="filter-tab-btn" data-filter="nguyen-hue"><i class="fas fa-shoe-prints"></i> Phố Nguyễn Huệ</button>
+                <button class="filter-tab-btn" data-filter="buu-dien"><i class="fas fa-envelope-open-text"></i> Bưu Điện TP</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-masonry-grid" id="galleryGrid">
+                <!-- Bach Dang 1 -->
+                <div class="gallery-cell" data-category="bach-dang">
+                    <div class="gallery-frame" onclick="openLightbox('images/bach-dang-bg.jpg', 'Bến Bạch Đằng - Công viên bờ sông hiện đại nhất TP.HCM')">
+                        <img src="images/bach-dang-bg.jpg" alt="Bến Bạch Đằng" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Bến Bạch Đằng Toàn Cảnh</h4>
+                            <p>Không gian xanh trải dài ven bờ sông</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nguyen Hue 1 -->
+                <div class="gallery-cell" data-category="nguyen-hue">
+                    <div class="gallery-frame" onclick="openLightbox('images/nguyen-hue-bg.jpg', 'Phố đi bộ Nguyễn Huệ - Đại lộ quảng trường hiện đại')">
+                        <img src="images/nguyen-hue-bg.jpg" alt="Phố đi bộ Nguyễn Huệ ban ngày" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Phố Đi Bộ Nguyễn Huệ</h4>
+                            <p>Quảng trường đi bộ trung tâm dài 670m</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buu Dien 1 -->
+                <div class="gallery-cell" data-category="buu-dien">
+                    <div class="gallery-frame" onclick="openLightbox('images/buu-dien-bg.jpg', 'Mặt tiền Bưu điện Trung tâm Sài Gòn hơn 130 năm tuổi')">
+                        <img src="images/buu-dien-bg.jpg" alt="Bưu Điện Trung Tâm mặt tiền" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Mặt Tiền Bưu Điện</h4>
+                            <p>Kiến trúc Gothic - Phục Hưng Pháp tráng lệ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bach Dang 2 -->
+                <div class="gallery-cell" data-category="bach-dang">
+                    <div class="gallery-frame" onclick="openLightbox('images/bach-dang-1.jpg', 'Ga tàu thủy buýt sông Saigon Waterbus nhộn nhịp')">
+                        <img src="images/bach-dang-1.jpg" alt="Ga buýt sông Bạch Đằng" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Ga Saigon Waterbus</h4>
+                            <p>Bến đỗ của tuyến buýt đường sông số 1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nguyen Hue 2 -->
+                <div class="gallery-cell" data-category="nguyen-hue">
+                    <div class="gallery-frame" onclick="openLightbox('images/nguyen-hue-2.jpg', 'Trụ sở UBND Thành phố Hồ Chí Minh đầu đường Nguyễn Huệ')">
+                        <img src="images/nguyen-hue-2.jpg" alt="Trụ sở UBND Thành phố" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Trụ Sở UBND TP.HCM</h4>
+                            <p>Di sản kiến trúc Phục Hưng xây dựng 1898</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buu Dien 2 -->
+                <div class="gallery-cell" data-category="buu-dien">
+                    <div class="gallery-frame" onclick="openLightbox('images/buu-dien-2.jpg', 'Nội thất vòm thép thùng rượu kinh điển bên trong Bưu điện')">
+                        <img src="images/buu-dien-2.jpg" alt="Nội thất vòm thép Bưu điện" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Vòm Mái Thép Eiffel</h4>
+                            <p>Kiến trúc kim loại độc nhất vô nhị</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bach Dang 3 -->
+                <div class="gallery-cell" data-category="bach-dang">
+                    <div class="gallery-frame" onclick="openLightbox('images/bach-dang-2.jpg', 'Cột Cờ Thủ Ngữ cổ kính soi bóng bên sông Sài Gòn')">
+                        <img src="images/bach-dang-2.jpg" alt="Cột cờ Thủ Ngữ" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Cột Cờ Thủ Ngữ</h4>
+                            <p>Trạm phát tín hiệu tàu thủy từ năm 1865</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nguyen Hue 3 -->
+                <div class="gallery-cell" data-category="nguyen-hue">
+                    <div class="gallery-frame" onclick="openLightbox('images/nguyen-hue-3.jpg', 'Chung cư 42 Nguyễn Huệ - Biểu tượng cà phê độc đáo')">
+                        <img src="images/nguyen-hue-3.jpg" alt="Chung cư cà phê 42" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Cà Phê Chung Cư 42</h4>
+                            <p>Khối kiến trúc vintage đầy mê hoặc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buu Dien 3 -->
+                <div class="gallery-cell" data-category="buu-dien">
+                    <div class="gallery-frame" onclick="openLightbox('images/buu-dien-3.jpg', 'Bản đồ Nam Kỳ cổ xưa vẽ tay treo trên tường sảnh Bưu điện')">
+                        <img src="images/buu-dien-3.jpg" alt="Bản đồ cổ Bưu điện" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Bản Đồ Viễn Thông Cổ</h4>
+                            <p>Tư liệu lịch sử vô giá từ năm 1936</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bach Dang 4 -->
+                <div class="gallery-cell" data-category="bach-dang">
+                    <div class="gallery-frame" onclick="openLightbox('images/bach-dang-4.jpg', 'Hoàng hôn buông đỏ rực trên sông Sài Gòn nhìn từ Bến Bạch Đằng')">
+                        <img src="images/bach-dang-4.jpg" alt="Hoàng hôn sông Sài Gòn bên Bến Bạch Đằng" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Hoàng Hôn Sông Sài Gòn</h4>
+                            <p>Khoảnh khắc rực rỡ buông xuống bến tàu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nguyen Hue 4 -->
+                <div class="gallery-cell" data-category="nguyen-hue">
+                    <div class="gallery-frame" onclick="openLightbox('images/nguyen-hue-4.jpg', 'Phố đi bộ Nguyễn Huệ rực sáng lung linh về đêm')">
+                        <img src="images/nguyen-hue-4.jpg" alt="Nguyễn Huệ về đêm" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Nguyễn Huệ Về Đêm</h4>
+                            <p>Trung tâm giải trí rực rỡ không bao giờ ngủ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buu Dien 4 -->
+                <div class="gallery-cell" data-category="buu-dien">
+                    <div class="gallery-frame" onclick="openLightbox('images/buu-dien-4.jpg', 'Nhà thờ Đức Bà đối diện Bưu Điện Trung Tâm')">
+                        <img src="images/buu-dien-4.jpg" alt="Nhà thờ Đức Bà đối diện Bưu điện" loading="lazy">
+                        <div class="frame-caption">
+                            <h4>Nhà Thờ Đức Bà Kề Bên</h4>
+                            <p>Cặp đôi di sản kiến trúc của Quảng trường Paris</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRACTICAL GUIDE & FAQ ================= -->
+    <section class="section section-faq">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-kicker"><i class="fas fa-circle-question"></i> THÔNG TIN BỎ TÚI</span>
+                <h2 class="section-heading">Câu Hỏi Thường Gặp Khi Khám Phá Tuyến Điểm</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="faq-accordion-container" id="faqAccordion">
+                <div class="faq-card active">
+                    <div class="faq-header">
+                        <h4><i class="fas fa-person-walking"></i> Có thể đi bộ giữa cả 3 địa điểm trong 1 buổi không?</h4>
+                        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p><strong>Hoàn toàn thuận lợi!</strong> Bến Bạch Đằng nối thẳng vào đầu phố đi bộ Nguyễn Huệ (chỉ cách 350m). Đi dọc hết phố Nguyễn Huệ tới UBND TP, rẽ nhẹ qua đường Pasteur/Lê Lợi là tới Bưu Điện Trung Tâm (khoảng 650m). Tổng quãng đường toàn tuyến chỉ khoảng 1,5 km – là cung đường đi bộ an toàn, vỉa hè rộng rãi và đẹp nhất TP.HCM.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-header">
+                        <h4><i class="fas fa-camera"></i> Điểm nào chụp ảnh vào thời gian nào đẹp nhất trong ngày?</h4>
+                        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p><strong>Bưu Điện Trung Tâm:</strong> Buổi sáng (07:30 – 09:30) khi nắng xiên qua vòm kính rất thơ mộng và vắng người.<br>
+                        <strong>Phố Đi Bộ Nguyễn Huệ:</strong> Buổi chiều tối (17:30 – 21:00) khi ánh đèn các tòa cao ốc bừng sáng và có nhạc nước.<br>
+                        <strong>Bến Bạch Đằng:</strong> Hoàng hôn (16:45 – 18:00) ngắm mặt trời lặn sau các tòa tháp soi bóng xuống dòng sông Sài Gòn.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-header">
+                        <h4><i class="fas fa-ticket-simple"></i> Chi phí tham quan toàn bộ 3 địa điểm là bao nhiêu?</h4>
+                        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p><strong>0 ĐỒNG!</strong> Cả 3 địa điểm đều mở cửa tự do hoàn toàn miễn phí vé vào cổng. Bạn chỉ cần chi trả các chi phí cá nhân tùy chọn như: vé tàu buýt sông (15.000 VNĐ), gửi xe (5.000 – 10.000 VNĐ), cà phê ngắm cảnh (40.000 – 70.000 VNĐ) hoặc ăn vặt đường phố.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-header">
+                        <h4><i class="fas fa-motorcycle"></i> Gửi xe máy hoặc ô tô ở đâu an toàn nhất gần 3 địa điểm?</h4>
+                        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-body">
+                        <p><strong>Gần Bến Bạch Đằng:</strong> Bãi xe ga tàu thủy Bạch Đằng hoặc bãi xe đường Tôn Đức Thắng.<br>
+                        <strong>Gần Nguyễn Huệ:</strong> Hầm Vincom Center Đồng Khởi (ô tô &amp; xe máy), tòa nhà Lucky Plaza, khách sạn Rex.<br>
+                        <strong>Gần Bưu Điện TP:</strong> Bãi xe Đường Sách Nguyễn Văn Bình, hầm Nhà Văn Hóa Thanh Niên hoặc Diamond Plaza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRIP PLANNER CONTACT FORM ================= -->
+    <section id="trip-planner" class="section section-planner">
+        <div class="container">
+            <div class="planner-glass-wrapper">
+                <div class="planner-info-col">
+                    <span class="badge-mini"><i class="fas fa-compass"></i> TƯ VẤN DU LỊCH MIỄN PHÍ</span>
+                    <h2>Nhận Cẩm Nang Bản Đồ &amp; Lịch Trình Sài Gòn Độc Quyền</h2>
+                    <p>
+                        Để lại thông tin để nhận ngay cẩm nang cất túi chi tiết định dạng PDF chất lượng cao, bao gồm sơ đồ đi bộ ngắn nhất, danh sách 30 quán ngon chuẩn vị Quận 1 và mã ưu đãi vé buýt sông Waterbus.
+                    </p>
+                    <div class="planner-contact-points">
+                        <div class="c-point">
+                            <i class="fas fa-envelope-circle-check"></i>
+                            <div>
+                                <strong>Email hỗ trợ du khách:</strong>
+                                <span>khampha@saigontravel.vn</span>
+                            </div>
+                        </div>
+                        <div class="c-point">
+                            <i class="fas fa-phone-volume"></i>
+                            <div>
+                                <strong>Đường dây nóng du lịch:</strong>
+                                <span>1900 6868 (Hỗ trợ 24/7)</span>
+                            </div>
+                        </div>
+                        <div class="c-point">
+                            <i class="fas fa-map-location-dot"></i>
+                            <div>
+                                <strong>Văn phòng hướng dẫn:</strong>
+                                <span>Trục đại lộ Nguyễn Huệ - Tôn Đức Thắng, Quận 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="planner-form-col">
+                    <form class="custom-travel-form" id="travelPlannerForm">
+                        <div class="form-title">
+                            <h3><i class="fas fa-paper-plane"></i> Tải Ngay Lịch Trình PDF</h3>
+                            <p>Hoàn toàn miễn phí • Nhận ngay trong 30 giây</p>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="input-field">
+                                <label for="userName"><i class="fas fa-user"></i> Họ và tên *</label>
+                                <input type="text" id="userName" placeholder="VD: Nguyễn Văn A" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="userEmail"><i class="fas fa-envelope"></i> Địa chỉ Email *</label>
+                                <input type="email" id="userEmail" placeholder="email@cuaban.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="input-field">
+                                <label for="userPhone"><i class="fas fa-phone"></i> Số điện thoại</label>
+                                <input type="tel" id="userPhone" placeholder="0901 234 567">
+                            </div>
+                            <div class="input-field">
+                                <label for="travelPace"><i class="fas fa-clock"></i> Thời gian dự kiến</label>
+                                <select id="travelPace">
+                                    <option value="1day">Khám phá trọn 1 ngày</option>
+                                    <option value="halfday">Buổi chiều &amp; tối (4 tiếng)</option>
+                                    <option value="weekend">Cuối tuần thư thả</option>
+                                    <option value="photo">Chuyên tour chụp ảnh (Photowalk)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="userNotes"><i class="fas fa-comment-dots"></i> Yêu cầu tư vấn đặc biệt</label>
+                            <textarea id="userNotes" rows="3" placeholder="Bạn muốn hỏi thêm về quán ăn ngon, thuê thợ chụp ảnh, hay đặt vé du thuyền?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit-plan" id="btnSubmitPlan">
+                            <i class="fas fa-download"></i> Gửi &amp; Tải Cẩm Nang Ngay
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-columns-grid">
+                <div class="footer-col-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-landmark"></i>
+                        <span>SÀI GÒN DI SẢN</span>
+                    </div>
+                    <p class="brand-desc">
+                        Trang thông tin cẩm nang du lịch phi lợi nhuận tôn vinh vẻ đẹp văn hóa, lịch sử và phong cách sống hiện đại của Thành phố Hồ Chí Minh.
+                    </p>
+                    <div class="social-links-wrap">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col-nav">
+                    <h4>3 ĐỊA ĐIỂM TIÊU BIỂU</h4>
+                    <ul>
+                        <li><a href="#bach-dang"><i class="fas fa-chevron-right"></i> Bến Bạch Đằng &amp; Sông Sài Gòn</a></li>
+                        <li><a href="#nguyen-hue"><i class="fas fa-chevron-right"></i> Phố Đi Bộ Nguyễn Huệ</a></li>
+                        <li><a href="#buu-dien"><i class="fas fa-chevron-right"></i> Bưu Điện Trung Tâm Sài Gòn</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Thư viện 12+ ảnh chân thực</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-nav">
+                    <h4>CẨM NANG HỮU ÍCH</h4>
+                    <ul>
+                        <li><a href="#itinerary"><i class="fas fa-chevron-right"></i> Lịch trình 1 ngày tối ưu</a></li>
+                        <li><a href="#overview"><i class="fas fa-chevron-right"></i> Bản đồ kết nối Quận 1</a></li>
+                        <li><a href="#trip-planner"><i class="fas fa-chevron-right"></i> Tải cẩm nang PDF</a></li>
+                        <li><a href="#hero"><i class="fas fa-chevron-right"></i> Trải nghiệm âm thanh Sài Gòn</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-nav">
+                    <h4>TRUNG TÂM HỖ TRỢ</h4>
+                    <p class="footer-contact-txt"><i class="fas fa-location-dot"></i> Quận 1, Thành phố Hồ Chí Minh</p>
+                    <p class="footer-contact-txt"><i class="fas fa-envelope"></i> info@saigontravel.vn</p>
+                    <p class="footer-contact-txt"><i class="fas fa-phone"></i> Đường dây nóng: 1900 6868</p>
+                    <div class="footer-verified-badge">
+                        <i class="fas fa-shield-halved"></i> Thông tin được cập nhật liên tục 2026
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Sài Gòn Travel Guide. Tinh hoa di sản &amp; văn hóa Thành phố Hồ Chí Minh.</p>
+                <div class="bottom-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Bản quyền hình ảnh</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Lên đầu trang">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ================= FULLSCREEN LIGHTBOX MODAL ================= -->
+    <div id="imageLightboxModal" class="lightbox-modal" aria-hidden="true">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Đóng"><i class="fas fa-xmark"></i></button>
+        <button class="lightbox-nav-btn prev" id="lightboxPrevBtn" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav-btn next" id="lightboxNextBtn" aria-label="Ảnh kế tiếp"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="lightbox-content-box">
+            <img src="" alt="" id="lightboxActiveImg" class="lightbox-active-img">
+            <div class="lightbox-caption-bar">
+                <p id="lightboxCaptionText"></p>
+                <span id="lightboxIndexTag"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
